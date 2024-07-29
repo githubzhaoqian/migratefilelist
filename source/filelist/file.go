@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/githubzhaoqian/migrate-filelist/source/iofs"
+	"github.com/githubzhaoqian/migratefilelist/source/iofs"
 
 	"github.com/golang-migrate/migrate/v4/source"
 )

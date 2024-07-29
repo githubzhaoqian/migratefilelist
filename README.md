@@ -1,4 +1,4 @@
-# migrate-filelist
+# migratefilelist
 
 golang-migrate/migrate 的 source 扩展，解决多版本同时开发并不确定合并顺序的问题，用文件行号代替原本文件的版本号。
 
@@ -30,11 +30,11 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/githubzhaoqian/migrate-filelist/source/iofs"
+	"github.com/githubzhaoqian/migratefilelist/source/iofs"
 
 	"github.com/golang-migrate/migrate/v4/database/mysql"
 
-	_ "github.com/githubzhaoqian/migrate-filelist/source/filelist"
+	_ "github.com/githubzhaoqian/migratefilelist/source/filelist"
 )
 
 func main() {

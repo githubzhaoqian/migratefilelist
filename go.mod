@@ -1,4 +1,4 @@
-module github.com/githubzhaoqian/migrate-filelist
+module github.com/githubzhaoqian/migratefilelist
 
 go 1.18
 

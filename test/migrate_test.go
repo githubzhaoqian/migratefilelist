@@ -10,11 +10,11 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/githubzhaoqian/migrate-filelist/source/iofs"
+	"github.com/githubzhaoqian/migratefilelist/source/iofs"
 
 	"github.com/golang-migrate/migrate/v4/database/mysql"
 
-	_ "github.com/githubzhaoqian/migrate-filelist/source/filelist"
+	_ "github.com/githubzhaoqian/migratefilelist/source/filelist"
 )
 
 func TestRun(t *testing.T) {

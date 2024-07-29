@@ -15,7 +15,7 @@ import (
 
 	"github.com/golang-migrate/migrate/v4/source"
 
-	flsource "github.com/githubzhaoqian/migrate-filelist/source"
+	flsource "github.com/githubzhaoqian/migratefilelist/source"
 )
 
 const (

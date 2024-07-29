@@ -1,1 +1,1 @@
-package migrate_filelist
+package migratefilelist
