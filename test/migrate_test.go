@@ -18,7 +18,7 @@ import (
 )
 
 func TestRun(t *testing.T) {
-	db, err := sql.Open("mysql", "root:root@tcp(127.0.0.1:3306)/migrate_test?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai")
+	db, err := sql.Open("mysql", "root:gogogo@tcp(127.0.0.1:3306)/gofast?collation=utf8mb4_bin&parseTime=true&loc=Local&multiStatements=true")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -31,12 +31,12 @@ func TestRun(t *testing.T) {
 		"mysql",
 		driver,
 	)
+	m.Steps(2)
 	version, dirty, err := m.Version()
 	if err != nil {
 		t.Fatal(err)
 	}
 	t.Logf("current versio: %d, dirty: %t", version, dirty)
-	m.Steps(2)
 	t.Log("END")
 }
 

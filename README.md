@@ -26,14 +26,8 @@ import (
 	"testing"
 
 	"github.com/golang-migrate/migrate/v4"
-	"github.com/golang-migrate/migrate/v4/source"
-
 	_ "github.com/go-sql-driver/mysql"
-
-	"github.com/githubzhaoqian/migratefilelist/source/iofs"
-
 	"github.com/golang-migrate/migrate/v4/database/mysql"
-
 	_ "github.com/githubzhaoqian/migratefilelist/source/filelist"
 )
 

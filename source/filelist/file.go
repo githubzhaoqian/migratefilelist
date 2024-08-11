@@ -29,7 +29,8 @@ func (f *FileList) Open(url string) (source.Driver, error) {
 		url:  url,
 		path: fileName,
 	}
-	if err := nf.Init(fileName, "."); err != nil {
+	dir := filepath.Dir(fileName)
+	if err := nf.Init(fileName, dir); err != nil {
 		return nil, err
 	}
 	return nf, nil

@@ -11,6 +11,7 @@ import (
 	"io/fs"
 	"os"
 	"path"
+	"path/filepath"
 	"strconv"
 
 	"github.com/golang-migrate/migrate/v4/source"
@@ -81,7 +82,8 @@ func (d *PartialDriver) Init(fileName, dir string) error {
 		if _, ok := itemMap[line]; ok {
 			return fmt.Errorf(errSchemaItemIsDuplicateFormat, line)
 		}
-		file, err := os.Open(line)
+		sqlFile := filepath.Join(dir, line)
+		file, err := os.Open(sqlFile)
 		if err != nil {
 			return err
 		}
